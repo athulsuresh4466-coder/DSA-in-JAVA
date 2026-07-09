@@ -1,0 +1,156 @@
+2. Binary Search
+Definition
+
+Searches by repeatedly dividing the sorted array into two halves.
+
+Condition: Array must be sorted.
+
+Time Complexity
+Best Case: O(1)
+Average Case: O(log n)
+Worst Case: O(log n)
+Space Complexity
+O(1) (Iterative)
+
+
+Java Code
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++)
+            arr[i] = sc.nextInt();
+
+        int key = sc.nextInt();
+
+        int low = 0;
+        int high = n - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+
+            if (arr[mid] == key) {
+                System.out.println("Found at index " + mid);
+                return;
+            } else if (arr[mid] < key) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+
+        System.out.println("Not Found");
+    }
+}
+Input
+5
+10 20 30 40 50
+40
+Output
+Found at index 3
+
+
+Linear Search vs Binary Search
+Feature	Linear Search	Binary Search
+Array Type	Sorted/Unsorted	Sorted Only
+Time Complexity	O(n)	O(log n)
+Space Complexity	O(1)	O(1)
+Speed	Slower	Faster
+Exam Points
+Linear Search: Checks elements one by one.
+Binary Search: Works only on sorted arrays.
+Linear Search Time: O(n)
+Binary Search Time: O(log n)
+Both Space Complexity: O(1) (iterative)
+
+
+
+binary searcchexample
+Binary Search Example (Java)
+
+Array (must be sorted):
+
+Index : 0   1   2   3   4
+Array : 10  20  30  40  50
+Key   : 40
+
+Step 1
+low = 0
+high = 4
+
+mid = (0 + 4) / 2 = 2
+
+arr[mid] = 30
+
+Since 40 > 30, search the right half.
+
+low = mid + 1 = 3
+high = 4
+
+
+Step 2
+mid = (3 + 4) / 2 = 3
+
+arr[mid] = 40
+
+Key found at index 3.
+
+Java Code
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int key = sc.nextInt();
+
+        int low = 0;
+        int high = n - 1;
+
+        while(low <= high) {
+            int mid = (low + high) / 2;
+
+            if(arr[mid] == key) {
+                System.out.println("Element found at index " + mid);
+                return;
+            }
+            else if(arr[mid] < key) {
+                low = mid + 1;
+            }
+            else {
+                high = mid - 1;
+            }
+        }
+
+        System.out.println("Element not found");
+    }
+}
+Input
+5
+10 20 30 40 50
+40
+Output
+Element found at index 3
+
+
+Complexity
+Best Case: O(1)
+Average Case: O(log n)
+Worst Case: O(log n)
+Space Complexity: O(1) (iterative)
+
+Remember: Binary Search works only on a sorted array.

@@ -1,0 +1,235 @@
+DSA in Java – Short Notes (Exam Revision)
+1. What is DSA?
+
+DSA = Data Structures + Algorithms
+
+Data Structure: Stores and organizes data.
+Algorithm: Step-by-step procedure to solve a problem.
+Data Structures
+2. Array
+Stores same type of elements.
+Fixed size.
+Index starts from 0.
+
+Time Complexity
+
+Access → O(1)
+Search → O(n)
+Insert/Delete → O(n)
+3. Linked List
+Nodes connected using pointers (references).
+Dynamic size.
+
+Types
+
+Singly Linked List
+Doubly Linked List
+Circular Linked List
+
+Time Complexity
+
+Insert/Delete at beginning → O(1)
+Search → O(n)
+4. Stack (LIFO)
+
+Last In First Out
+
+Operations:
+
+Push
+Pop
+Peek
+
+Time: O(1)
+
+Example:
+
+3
+2
+1  ← Top
+5. Queue (FIFO)
+
+First In First Out
+
+Operations:
+
+Enqueue
+Dequeue
+Front
+
+Time: O(1)
+
+Example:
+
+Front → 1 2 3 ← Rear
+6. Tree
+Hierarchical structure.
+Root, Parent, Child, Leaf.
+
+Binary Tree: Maximum 2 children.
+
+Traversals:
+
+Preorder
+Inorder
+Postorder
+7. Binary Search Tree (BST)
+
+Rule:
+
+Left < Root < Right
+
+Search:
+O(log n) (average)
+
+8. Heap
+Complete Binary Tree.
+Used in Priority Queue.
+
+Types:
+
+Max Heap
+Min Heap
+9. Graph
+
+Collection of vertices and edges.
+
+Traversals:
+
+BFS
+DFS
+10. Hashing
+
+Stores key-value pairs.
+
+Java:
+
+HashMap<Integer, String>
+HashSet<Integer>
+
+Average Search:
+O(1)
+
+Algorithms
+11. Linear Search
+
+Checks one by one.
+
+Time:
+O(n)
+
+12. Binary Search
+
+Works only on sorted array.
+
+Time:
+O(log n)
+
+13. Bubble Sort
+
+Repeatedly swaps adjacent elements.
+
+Time:
+O(n²)
+
+14. Selection Sort
+
+Select minimum and swap.
+
+Time:
+O(n²)
+
+15. Insertion Sort
+
+Insert element in correct position.
+
+Time:
+O(n²)
+
+16. Merge Sort
+
+Divide and Merge.
+
+Time:
+O(n log n)
+
+Space:
+O(n)
+
+17. Quick Sort
+
+Choose Pivot.
+
+Average:
+O(n log n)
+
+Worst:
+O(n²)
+
+Complexity
+Time Complexity
+
+How much time an algorithm takes.
+
+Common:
+
+O(1)
+O(log n)
+O(n)
+O(n log n)
+O(n²)
+O(2ⁿ)
+O(n!)
+Space Complexity
+
+How much memory an algorithm uses.
+
+Examples:
+
+Variables → O(1)
+Extra Array → O(n)
+Matrix → O(n²)
+Recursion
+
+A function calling itself.
+
+Needs:
+
+Base Case
+Recursive Call
+
+Example:
+
+factorial(n)
+Big-O Order (Best to Worst)
+O(1)
+O(log n)
+O(n)
+O(n log n)
+O(n²)
+O(n³)
+O(2ⁿ)
+O(n!)
+Java Collections Used in DSA
+Collection	Use
+ArrayList	Dynamic Array
+LinkedList	Linked List
+Stack	LIFO
+Queue	FIFO
+PriorityQueue	Heap
+HashMap	Key-Value
+HashSet	Unique Elements
+TreeSet	Sorted Set
+Frequently Asked Interview/Exam Questions
+Difference between Array and Linked List.
+Stack vs Queue.
+BFS vs DFS.
+Binary Search vs Linear Search.
+Time Complexity vs Space Complexity.
+Merge Sort vs Quick Sort.
+What is Recursion?
+What is Hashing?
+What is a Binary Search Tree?
+What is Big-O Notation?
+
+These notes cover the core DSA concepts commonly asked in Java exams and are suitable for quick revision.

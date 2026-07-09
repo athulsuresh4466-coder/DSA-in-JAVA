@@ -1,0 +1,69 @@
+Time Complexity tells us how the running time of an algorithm increases as the input size (N) increases.
+
+Common Time Complexities
+Time Complexity	Name	Example
+O(1)	Constant	Access arr[0]
+O(log n)	Logarithmic	Binary Search
+O(n)	Linear	Traverse an array
+O(n log n)	Linearithmic	Merge Sort, Heap Sort
+O(n²)	Quadratic	Nested loops, Bubble Sort
+O(n³)	Cubic	Three nested loops
+O(2ⁿ)	Exponential	Recursive Fibonacci
+O(n!)	Factorial	Generating all permutations
+
+
+Examples
+
+O(1)
+System.out.println(arr[0]);
+O(n)
+for (int i = 0; i < n; i++) {
+    System.out.println(arr[i]);
+}
+
+
+O(n²)
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        System.out.println(i + " " + j);
+    }
+}
+
+
+O(log n)
+// Binary Search
+while (low <= high) {
+    int mid = (low + high) / 2;
+    // search logic
+}
+
+
+Time Complexity of Common Algorithms
+Algorithm	Time Complexity
+
+
+Linear Search	O(n)
+Binary Search	O(log n)
+Bubble Sort	O(n²)
+Selection Sort	O(n²)
+Insertion Sort	O(n²)
+Merge Sort	O(n log n)
+Quick Sort	O(n log n) (average), O(n²) (worst)
+Heap Sort	O(n log n)
+DFS	O(V + E)
+BFS	O(V + E)
+
+
+Exam Tip
+Single loop → O(n)
+Two nested loops → O(n²)
+Three nested loops → O(n³)
+Loop dividing by 2 each time → O(log n)
+Loop + Binary Search → O(n log n)
+All permutations of n elements → O(n!)
+
+Memory Trick:
+
+O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n³) < O(2ⁿ) < O(n!)
+
+(from fastest to slowest).
