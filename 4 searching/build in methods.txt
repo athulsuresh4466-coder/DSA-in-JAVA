@@ -1,0 +1,37 @@
+| Method                          | Used For                   | Returns          | Time Complexity | Example                        |
+| ------------------------------- | -------------------------- | ---------------- | --------------- | ------------------------------ |
+| `Arrays.binarySearch(arr, key)` | Search in **sorted array** | Index or `-1`    | **O(log n)**    | `Arrays.binarySearch(arr, 40)` |
+| `list.contains(x)`              | Check if element exists    | `true` / `false` | **O(n)**        | `list.contains(20)`            |
+| `list.indexOf(x)`               | Find first index           | Index or `-1`    | **O(n)**        | `list.indexOf(20)`             |
+| `list.lastIndexOf(x)`           | Find last index            | Index or `-1`    | **O(n)**        | `list.lastIndexOf(20)`         |
+| `str.indexOf(ch)`               | Find character index       | Index or `-1`    | **O(n)**        | `"Java".indexOf('v')`          |
+| `str.indexOf("sub")`            | Find substring             | Index or `-1`    | **O(n)**        | `"Java".indexOf("av")`         |
+| `str.lastIndexOf(ch)`           | Last occurrence            | Index or `-1`    | **O(n)**        | `"banana".lastIndexOf('a')`    |
+| `str.contains("sub")`           | Check substring            | `true` / `false` | **O(n)**        | `"Java".contains("Ja")`        |
+| `str.startsWith("text")`        | Starts with                | `true` / `false` | **O(n)**        | `"Java".startsWith("Ja")`      |
+| `str.endsWith("text")`          | Ends with                  | `true` / `false` | **O(n)**        | `"Java".endsWith("va")`        |
+
+
+
+| Method          | Code                          | Output |
+| --------------- | ----------------------------- | ------ |
+| Binary Search   | `Arrays.binarySearch(arr,40)` | `3`    |
+| Contains        | `list.contains(20)`           | `true` |
+| Index Of        | `list.indexOf(20)`            | `1`    |
+| Last Index Of   | `"banana".lastIndexOf('a')`   | `5`    |
+| String Index    | `"Java".indexOf('v')`         | `2`    |
+| String Contains | `"Java".contains("av")`       | `true` |
+| Starts With     | `"Java".startsWith("Ja")`     | `true` |
+| Ends With       | `"Java".endsWith("va")`       | `true` |
+
+
+
+| Task                       | Method                  |
+| -------------------------- | ----------------------- |
+| Search in sorted array     | `Arrays.binarySearch()` |
+| Check element in ArrayList | `contains()`            |
+| Find first index           | `indexOf()`             |
+| Find last index            | `lastIndexOf()`         |
+| Check substring            | `contains()`            |
+| Check starting text        | `startsWith()`          |
+| Check ending text          | `endsWith()`            |
