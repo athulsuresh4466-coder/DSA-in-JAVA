@@ -1,0 +1,42 @@
+Two Pointer Algorithm (Java Notes)
+
+
+What is Two Pointer Algorithm?
+
+The Two Pointer Algorithm uses two indices (pointers) to solve problems efficiently on arrays or strings.
+
+Instead of using nested loops (O(n²)), it often solves problems in O(n) time.
+
+When to Use?
+
+Use the Two Pointer technique when:
+
+Array is sorted.
+Need to find a pair of elements.
+Need to remove duplicates.
+Need to reverse an array or string.
+Need to check palindrome.
+
+
+Types of Two Pointers
+
+1. Opposite Direction
+One pointer starts from the beginning (left).
+Another pointer starts from the end (right).
+
+Example:
+
+Array:
+1 2 3 4 5 6
+
+L         R
+
+
+2. Same Direction (Fast & Slow Pointer)
+Both pointers start from the beginning.
+One moves faster than the other.
+
+Example:
+
+Slow -> 1 2 3 4 5
+Fast -> 1 2 3 4 5

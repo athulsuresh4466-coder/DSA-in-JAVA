@@ -1,0 +1,158 @@
+Example 1: Find Pair with Given Sum (Sorted Array)
+Problem
+
+Find two numbers whose sum is equal to the target.
+
+Input:
+
+Array = {1,2,3,4,6}
+Target = 6
+
+Output:
+
+2 + 4 = 6
+
+
+Java Code
+public class TwoPointer {
+    public static void main(String[] args) {
+
+        int arr[] = {1,2,3,4,6};
+        int target = 6;
+
+        int left = 0;
+        int right = arr.length - 1;
+
+        while(left < right){
+
+            int sum = arr[left] + arr[right];
+
+            if(sum == target){
+                System.out.println(arr[left] + " " + arr[right]);
+                break;
+            }
+            else if(sum < target){
+                left++;
+            }
+            else{
+                right--;
+            }
+        }
+    }
+}
+
+Output:
+
+2 4
+
+Time Complexity:
+
+O(n)
+
+Space Complexity:
+
+O(1)
+
+
+
+Example 2: Reverse an Array
+public class ReverseArray {
+    public static void main(String[] args) {
+
+        int arr[] = {1,2,3,4,5};
+
+        int left = 0;
+        int right = arr.length - 1;
+
+        while(left < right){
+
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            left++;
+            right--;
+        }
+
+        for(int num : arr)
+            System.out.print(num + " ");
+    }
+}
+
+Output:
+
+5 4 3 2 1
+
+
+
+Example 3: Check Palindrome String
+public class Palindrome {
+    public static void main(String[] args) {
+
+        String str = "madam";
+
+        int left = 0;
+        int right = str.length() - 1;
+
+        boolean palindrome = true;
+
+        while(left < right){
+
+            if(str.charAt(left) != str.charAt(right)){
+                palindrome = false;
+                break;
+            }
+
+            left++;
+            right--;
+        }
+
+        if(palindrome)
+            System.out.println("Palindrome");
+        else
+            System.out.println("Not Palindrome");
+    }
+}
+
+Output:
+
+Palindrome
+Example 4: Remove Duplicates from Sorted Array
+public class RemoveDuplicates {
+    public static void main(String[] args) {
+
+        int arr[] = {1,1,2,2,3,4,4};
+
+        int i = 0;
+
+        for(int j = 1; j < arr.length; j++){
+            if(arr[i] != arr[j]){
+                i++;
+                arr[i] = arr[j];
+            }
+        }
+
+        for(int k = 0; k <= i; k++){
+            System.out.print(arr[k] + " ");
+        }
+    }
+}
+
+Output:
+
+1 2 3 4
+
+
+
+Advantages
+
+Faster than nested loops.
+Reduces time complexity from O(n²) to O(n) in many problems.
+Uses constant extra space (O(1)).
+Easy to implement for sorted arrays and strings.
+
+
+Disadvantages
+
+Mostly works on sorted arrays (for many problems).
+Not suitable for every problem.
