@@ -16,3 +16,50 @@ Worst: O(n log n)
 Space Complexity
 
 O(n)
+
+
+public static void syncAttributeText() {
+    List<Account> accsToSync = new List<Account>();
+
+    // Cast oldMap to Account map ONCE outside the loop
+    Map<Id, Account> oldAccMap = (Trigger.isUpdate)
+                                    ? (Map<Id, Account>) Trigger.oldMap
+                                    : new Map<Id, Account>();
+
+    for (Account acc : (List<Account>) Trigger.new) {
+        
+        String oldAttrValue = oldAccMap.containsKey(acc.Id)
+                                ? oldAccMap.get(acc.Id).SAP_Attribute_2__c
+                                : null;
+
+        if (Trigger.isInsert || acc.SAP_fAttribute_2__c != oldAttrValue) {
+            accsToSync.add(new Account(
+                Id                 = acc.Id,
+                SAP_Attribute_2__c = acc.SAP_fAttribute_2__c
+            ));
+        }
+    }
+
+    if (!accsToSync.isEmpty()) {
+        Database.update(accsToSync, false);
+    }
+}public class AccountHandler extends TriggerHandlerBase {
+    
+    static public boolean hasTriggerExecuted = false;  
+
+    public override void bulkbefore() {
+        if (Trigger.isInsert || Trigger.isUpdate) {
+            geoValidation.geoValidateAccount(); 
+            accountSBU.registerSBU(Trigger.new);        
+        }
+    }
+    
+    // <VD_SAP_ATTR_TEXT> - START
+    public override void bulkafter() {
+        if (Trigger.isInsert || Trigger.isUpdate) {
+            accountSBU.syncAttributeText();
+        }
+    }
+    // <VD_SAP_ATTR_TEXT> - END
+
+}
