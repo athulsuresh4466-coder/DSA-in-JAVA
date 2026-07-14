@@ -1,0 +1,42 @@
+Hashing (Simple Notes)
+What is Hashing?
+
+Hashing is a technique used to store and retrieve data quickly by converting a key into an index using a hash function.
+
+It provides fast searching, insertion, and deletion.
+Average time complexity: O(1).
+Hash Function
+
+A hash function converts a key into an index (location) in a hash table.
+
+Formula:
+
+Hash Index = Key % Table Size
+
+Example:
+
+Key = 25
+Table Size = 10
+
+Hash Index = 25 % 10 = 5
+
+So, the value is stored at index 5.
+
+Hash Table
+
+A hash table is a data structure that stores data using the hash index.
+
+Example:
+
+| Index | Value |
+| ----- | ----- |
+| 0     | -     |
+| 1     | -     |
+| 2     | -     |
+| 3     | -     |
+| 4     | -     |
+| 5     | 25    |
+| 6     | -     |
+| 7     | -     |
+| 8     | -     |
+| 9     | -     |
