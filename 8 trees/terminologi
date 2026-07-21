@@ -1,0 +1,40 @@
+| Term          | Simple Meaning              | Example                   |
+| ------------- | --------------------------- | ------------------------- |
+| Node          | Element in the tree         | A, B, C                   |
+| Root          | Topmost node                | A                         |
+| Parent        | Node with children          | A                         |
+| Child         | Node below a parent         | B                         |
+| Sibling       | Same parent                 | B and C                   |
+| Leaf Node     | No children                 | D, E, F                   |
+| Internal Node | Has at least one child      | A, B, C                   |
+| Degree        | Number of children          | Degree(A) = 2             |
+| Ancestor      | Nodes above a node          | A, B are ancestors of E   |
+| Descendant    | Nodes below a node          | D, E are descendants of B |
+| Path          | Connected sequence of nodes | A → B → E                 |
+| Depth         | Edges from root to node     | Depth(E) = 2              |
+| Level         | Position of node (root = 1) | Level(E) = 3              |
+| Height        | Longest path to a leaf      | Height(A) = 2             |
+
+
+
+
+
+| **Term**                      | **Definition**                                               | **Example**                     |
+| ----------------------------- | ------------------------------------------------------------ | ------------------------------- |
+| **Node**                      | An individual element that stores data in a tree.            | A, B, C                         |
+| **Edge**                      | A connection between two nodes.                              | A → B                           |
+| **Root Node**                 | The topmost node with no parent.                             | A                               |
+| **Parent Node**               | A node that has one or more children.                        | A is the parent of B and C.     |
+| **Child Node**                | A node directly below a parent.                              | B is a child of A.              |
+| **Sibling Node**              | Nodes having the same parent.                                | B and C                         |
+| **Leaf Node (External Node)** | A node with no children.                                     | D, E, F                         |
+| **Internal Node**             | A node with at least one child.                              | A, B, C                         |
+| **Degree of a Node**          | Number of children of a node.                                | Degree(A) = 2                   |
+| **Ancestor**                  | Any node on the path from the root to a given node.          | Ancestors of E: A, B            |
+| **Descendant**                | Any node below a given node.                                 | Descendants of B: D, E          |
+| **Path**                      | A sequence of connected nodes.                               | A → B → E                       |
+| **Depth**                     | Number of edges from the root to a node.                     | Depth(E) = 2                    |
+| **Level**                     | Position of a node in the tree (Root = Level 1).             | Level(E) = 3                    |
+| **Height of a Node**          | Number of edges in the longest path from the node to a leaf. | Height(B) = 1                   |
+| **Height of a Tree**          | Number of edges in the longest path from the root to a leaf. | Height(A) = 2                   |
+| **Subtree**                   | A tree formed by a node and all its descendants.             | Subtree rooted at B = {B, D, E} |
