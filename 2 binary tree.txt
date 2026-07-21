@@ -1,0 +1,8 @@
+| **Type**                   | **Simple Definition**                                                                                    |
+| -------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Full Binary Tree**       | Every node has either **0 or 2 children**.                                                               |
+| **Complete Binary Tree**   | All levels are completely filled except possibly the last level, which is filled **from left to right**. |
+| **Perfect Binary Tree**    | All internal nodes have **2 children**, and all leaf nodes are at the **same level**.                    |
+| **Balanced Binary Tree**   | The height of left and right subtrees is nearly equal, usually differing by **at most 1**.               |
+| **Degenerate Binary Tree** | Every parent node has only **one child**, making it look like a linked list.                             |
+| **Skewed Binary Tree**     | A type of degenerate tree where all nodes are only on the **left or right side**.                        |
