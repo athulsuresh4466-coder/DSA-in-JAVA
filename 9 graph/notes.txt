@@ -49,3 +49,11 @@
 | **Minimum Spanning Tree (MST)** | Spanning tree with minimum total weight.                                            | Prim's, Kruskal's   |
 | **Shortest Path**               | Minimum distance between two vertices.                                              | Dijkstra            |
 | **Traversal**                   | Visiting every vertex exactly once.                                                 | BFS, DFS            |
+
+
+| Implementation       | Data Structure Used             | Space Complexity | Add Edge | Search Edge | Advantages               | Disadvantages                   | Applications                   |
+| -------------------- | ------------------------------- | ---------------- | -------- | ----------- | ------------------------ | ------------------------------- | ------------------------------ |
+| **Adjacency Matrix** | 2D Array (`int[][]`)            | **O(V²)**        | O(1)     | O(1)        | Simple, fast edge lookup | Wastes memory for sparse graphs | Dense graphs, Floyd-Warshall   |
+| **Adjacency List**   | `ArrayList<ArrayList<Integer>>` | **O(V+E)**       | O(1)     | O(V)        | Memory efficient         | Edge lookup slower than matrix  | BFS, DFS, Dijkstra             |
+| **Edge List**        | `ArrayList<Edge>`               | **O(E)**         | O(1)     | O(E)        | Easy to store edges      | Slow searching                  | Kruskal's Algorithm            |
+| **Weighted Graph**   | `ArrayList<ArrayList<Edge>>`    | **O(V+E)**       | O(1)     | O(V)        | Stores edge weights      | Slightly complex                | Dijkstra, Prim's, Bellman-Ford |
