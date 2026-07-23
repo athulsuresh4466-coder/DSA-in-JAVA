@@ -1,0 +1,51 @@
+| Term               | Definition                                   |
+| ------------------ | -------------------------------------------- |
+| Vertex (Node)      | A point in a graph                           |
+| Edge               | Connection between two vertices              |
+| Degree             | Number of edges connected to a vertex        |
+| Path               | Sequence of connected vertices               |
+| Cycle              | Path that starts and ends at the same vertex |
+| Connected Graph    | Every vertex is reachable                    |
+| Disconnected Graph | Some vertices are not connected              |
+
+
+
+
+| Topic                           | Definition                                                                          | Example             |
+| ------------------------------- | ----------------------------------------------------------------------------------- | ------------------- |
+| **Graph**                       | A non-linear data structure consisting of vertices (nodes) and edges (connections). | A-B-C               |
+| **Vertex (Node)**               | A point in the graph.                                                               | A, B, C             |
+| **Edge**                        | A connection between two vertices.                                                  | A—B                 |
+| **Adjacent Vertices**           | Two vertices connected by an edge.                                                  | A and B             |
+| **Degree**                      | Number of edges connected to a vertex.                                              | Degree(A)=3         |
+| **In-Degree**                   | Number of incoming edges (Directed Graph).                                          | A ← B               |
+| **Out-Degree**                  | Number of outgoing edges (Directed Graph).                                          | A → B               |
+| **Path**                        | Sequence of connected vertices.                                                     | A→B→C→D             |
+| **Simple Path**                 | Path with no repeated vertices.                                                     | A→B→C               |
+| **Cycle**                       | Path that starts and ends at the same vertex.                                       | A→B→C→A             |
+| **Simple Cycle**                | Cycle without repeating any vertex except start/end.                                | A→B→C→A             |
+| **Connected Graph**             | Every vertex can be reached from every other vertex.                                | All nodes connected |
+| **Disconnected Graph**          | Some vertices cannot be reached.                                                    | Two separate groups |
+| **Complete Graph**              | Every vertex is connected to every other vertex.                                    | K₄                  |
+| **Sparse Graph**                | Has very few edges.                                                                 | Tree                |
+| **Dense Graph**                 | Has many edges.                                                                     | Complete Graph      |
+| **Weighted Graph**              | Edges have weights/costs.                                                           | A--5--B             |
+| **Unweighted Graph**            | Edges have no weights.                                                              | A—B                 |
+| **Directed Graph (Digraph)**    | Edges have directions.                                                              | A→B                 |
+| **Undirected Graph**            | Edges have no directions.                                                           | A—B                 |
+| **Cyclic Graph**                | Contains one or more cycles.                                                        | A→B→C→A             |
+| **Acyclic Graph**               | Contains no cycles.                                                                 | Tree                |
+| **Tree**                        | Connected acyclic graph.                                                            | Binary Tree         |
+| **Forest**                      | Collection of disjoint trees.                                                       | Multiple Trees      |
+| **Bipartite Graph**             | Vertices divided into two sets; edges only between sets.                            | U and V sets        |
+| **DAG**                         | Directed Acyclic Graph.                                                             | Task Scheduling     |
+| **Self Loop**                   | Edge from a vertex to itself.                                                       | A→A                 |
+| **Parallel Edges**              | Multiple edges between the same vertices.                                           | A══B                |
+| **Bridge**                      | Edge whose removal disconnects the graph.                                           | Critical Edge       |
+| **Articulation Point**          | Vertex whose removal disconnects the graph.                                         | Critical Vertex     |
+| **Source Vertex**               | Vertex with only outgoing edges.                                                    | Start Node          |
+| **Sink Vertex**                 | Vertex with only incoming edges.                                                    | End Node            |
+| **Spanning Tree**               | Tree connecting all vertices without cycles.                                        | MST Base            |
+| **Minimum Spanning Tree (MST)** | Spanning tree with minimum total weight.                                            | Prim's, Kruskal's   |
+| **Shortest Path**               | Minimum distance between two vertices.                                              | Dijkstra            |
+| **Traversal**                   | Visiting every vertex exactly once.                                                 | BFS, DFS            |
